@@ -6,11 +6,11 @@ def set_base(basedir):
     os.chdir(basedir)
     return basedir
 
-base = set_base('/home/richard/Dev/Py/crash/proj')
+base = set_base('/home/richard/Dev/Py/crash/proj/guest')
 
 guest_name = input('Name: ')
 file_name = guest_name.strip()+'.txt'
-path=Path(f'{base}/guest/{file_name}')
+path=Path(f'{base}/{file_name}')
 
 print(f"Writing '{guest_name}' to '{file_name}' using path "
       f"'{path}' from '{os.getcwd()}'")

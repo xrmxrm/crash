@@ -1,7 +1,15 @@
+
+import os
 from pathlib import Path
 
+def set_base(basedir):
+    """Set base directory and make it the current working directory"""
+    os.chdir(basedir)
+    return basedir
 
-path = Path('alice.txt')
+base = set_base('/home/richard/Dev/Py/crash/proj/')
+
+path = Path(f'{base}/alice.txt')
 try:
     contents = path.read_text(encoding='utf-8')
 except FileNotFoundError:
