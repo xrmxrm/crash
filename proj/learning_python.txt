@@ -1,0 +1,7 @@
+In python you can write programs.
+In python you can keep parts of programs in separate files.
+In python you can create classes.
+In python you can create instances of classes.
+In python you can create subclasses.
+In python you can leverage superclass initialization in subclasses
+In python you can access a huge number of existing modules.
